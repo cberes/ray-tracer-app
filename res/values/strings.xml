@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string name="app_name">Ray Tracer</string>
+	<string name="draw">Ray Trace</string>
+	<string name="redraw">New Image</string>
+	<string name="save_image">Save Image</string>
+	<string name="image_saved">Image saved to %1$s</string>
+	<string name="save_error">Image could not be saved!</string>
+	<string name="draw_time">Ray Tracing complete in %1$.2f seconds</string>
+	<string name="input_error">Text input is invalid!</string>
+	<string name="progress_title">Ray tracing</string>
+	<string name="progress_message">This might take several minutes</string>
+	<string name="too_large">Requested image size was too large!</string>
+	<string name="perm_desc">display a ray-traced image</string>
+	<string name="display_info">Display Info</string>
+	<string name="result_info">Result completed in %1$.3f s.</string>
+	<string name="local_service_started">Ray Tracing started</string>
+	<string name="local_service_stopped">Ray Tracing completed in %1$.2f s.</string>
+	<string name="local_service_label">Ray Tracer</string>
+</resources>

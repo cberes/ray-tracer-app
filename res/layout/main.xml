@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.gesture.GestureOverlayView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gestures"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:gestureStrokeType="single"
+    android:eventsInterceptionEnabled="true"
+    android:orientation="vertical">
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:padding="5dp"
+>
+<TextView
+android:id="@+id/textView1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Choose your parameters, then swipe to your left (or right) to begin ray tracing."
+android:textAppearance="?android:attr/textAppearanceMedium"
+android:layout_marginBottom="10dp" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Image Size"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+>
+	<EditText
+	android:id="@+id/width"
+	android:layout_width="100sp"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:text="800"
+	android:inputType="number"
+	>
+	</EditText>	
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="px by "
+	>
+	</TextView>
+	<EditText
+	android:id="@+id/height"
+	android:layout_width="100sp"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:text="600"
+	android:inputType="number"
+	>
+	</EditText>	
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="px"
+	>
+	</TextView>
+</LinearLayout>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Number of Threads"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<EditText
+android:id="@+id/workers"
+android:layout_width="100sp"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+android:text="1"
+android:inputType="number"
+>
+</EditText>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Antialiasing"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<CheckBox
+android:id="@+id/supersampling"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Supersampling"
+>
+</CheckBox>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Illumination Model"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<RadioGroup
+android:id="@+id/illumination"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+	<RadioButton
+	android:id="@+id/phong"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Phong"
+	>
+	</RadioButton>
+	<RadioButton
+	android:id="@+id/phongblinn"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Phong-Blinn"
+	>
+	</RadioButton>
+</RadioGroup>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Reflections"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<RadioGroup
+android:id="@+id/reflections"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+	<RadioButton
+	android:id="@+id/mirror"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Mirror"
+	>
+	</RadioButton>
+	<RadioButton
+	android:id="@+id/dull"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Dull"
+	>
+	</RadioButton>
+</RadioGroup>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Recursion Depth"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<EditText
+android:id="@+id/depth"
+android:layout_width="100sp"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+android:text="5"
+android:inputType="number"
+>
+</EditText>
+<TextView
+android:id="@+id/widget44"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Reflection Jitter"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Dull Only"
+>
+</TextView>
+<EditText
+android:id="@+id/jitter"
+android:layout_width="100sp"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+android:text="0.25"
+android:inputType="numberDecimal"
+>
+</EditText>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Reflection Rays"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Dull Only"
+>
+</TextView>
+<EditText
+android:id="@+id/rays"
+android:layout_width="100sp"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+android:text="25"
+android:inputType="number"
+>
+</EditText>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Post Processing"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<CheckBox
+android:id="@+id/tones"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tone Reproduction"
+>
+</CheckBox>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tone Operator"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tone Reproduction Only"
+>
+</TextView>
+<RadioGroup
+android:id="@+id/operator"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+	<RadioButton
+	android:id="@+id/ward"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Ward"
+	>
+	</RadioButton>
+	<RadioButton
+	android:id="@+id/reinhard"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Reinhard"
+	>
+	</RadioButton>
+</RadioGroup>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="L max"
+android:textAppearance="?android:attr/textAppearanceMedium"
+>
+</TextView>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tone Reproduction Only"
+>
+</TextView>
+<EditText
+android:id="@+id/lmax"
+android:layout_width="100sp"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+android:text="1000"
+android:inputType="number"
+>
+</EditText>
+</LinearLayout>
+</ScrollView>
+</android.gesture.GestureOverlayView>
